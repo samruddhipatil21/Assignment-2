@@ -1,14 +1,18 @@
 # Assignment-2
 This script utilizes PyTorch's Lightning library to construct a Convolutional Neural Network (CNN) for image classification tasks, employing the iNaturalist 12K dataset. The CNN architecture encompasses five convolutional layers, each succeeded by max-pooling, batch normalization, dropout, and culminates in a fully connected layer with softmax activation. Key model hyperparameters, including activation function, batch normalization, data augmentation, filter organization, and dropout rate, are customizable through command-line arguments.
-#Install the required libraries:
+### Instructions to train and evaluate the model
+1. Install the required libraries:
+```python
 !pip install pytorch_lightning
 !curl -SL https://storage.googleapis.com/wandb_datasets/nature_12K.zip > Asg2_Dataset.zip
 !unzip Asg2_Dataset.zip
 !pip install wandb
-
-#To train the model run train.py using the below command:
+```
+2. Give proper path for the dataset.
+3. To train the model run train.py using the below command: 
+```python
 python train.py --wandb_entity myname --wandb_project myprojectname
-
+```
 Following are the supported command line arguments:
 
 |           Name           | Default Value | Description                                                               |
