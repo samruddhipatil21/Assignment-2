@@ -4,8 +4,8 @@ This script utilizes PyTorch's Lightning library to construct a Convolutional Ne
 1. Install the required libraries:
 ```python
 !pip install pytorch_lightning
-!curl -SL https://storage.googleapis.com/wandb_datasets/nature_12K.zip > Asg2_Dataset.zip
-!unzip Asg2_Dataset.zip
+!curl -SL https://storage.googleapis.com/wandb_datasets/nature_12K.zip > Dataset.zip
+!unzip Dataset.zip
 !pip install wandb
 ```
 2. Give proper path for the dataset.
